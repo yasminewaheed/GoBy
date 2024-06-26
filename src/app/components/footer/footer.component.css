@@ -1,0 +1,30 @@
+@media screen and (max-width: 800px){
+    .section, .footer div , span{
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-inline-start: 0 !important;
+        
+    }
+
+    .div1 h6{
+        font-size: 9px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .div2{
+        margin-inline-start: 0 !important;
+        padding-inline-start: 0 !important;
+    }
+
+    .div2 img{
+        width: 42%;
+    }
+
+    .div1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}

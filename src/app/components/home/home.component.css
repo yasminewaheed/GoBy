@@ -1,0 +1,31 @@
+.apps a{
+    flex: 0 0 16.67%;
+    max-width: 50px;
+    margin: auto !important;
+}
+
+.apps{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25pX !important;
+    width: 470px;
+    margin: auto !important;
+}
+
+@media screen and (max-width: 767.98px){
+
+    .apps a{
+        flex: 0 0 50%;
+        max-width: 80px;
+    }
+    .apps{
+        padding-top: 17px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 160px;
+        margin: auto !important;
+        row-gap: 150px;
+    }
+}

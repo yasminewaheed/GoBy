@@ -1,0 +1,484 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'MyFont';
+  src: url('./assets/font/Avenir Heavy.ttf');
+}
+
+@font-face {
+  font-family: 'Headers';
+  src: url('./assets/font/Avenir Black.ttf');
+}
+
+
+:root {
+  --header-color: #4F45E8;
+  --secondary-color: #4FF570;
+  --text-color: #06054B;
+  --light-color: #f5f5f5;
+  --shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+    rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+    rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+  /* --rating-color: #ffc908; */
+}
+
+*{
+  text-decoration: none;
+  list-style: none;
+}
+
+body ,a {
+  direction: rtl;
+  font-family: 'MyFont' !important;
+  color: var(--text-color) !important;
+
+}
+li a{
+  font-size: 13px !important;
+  color: var(--text-color) !important;
+}
+.header{
+  font-family: 'Headers';
+  color: var(--header-color);
+}
+
+.bold{
+  font-family: 'Headers';
+}
+.secondary-color{
+  color: var(--secondary-color);
+  text-align: right;
+}
+
+/* google play  */
+@font-face{
+  font-family:"fontfutura";
+  src:url("https://fonts.googleapis.com/css?family=Open+Sans") format("ttf");
+  font-weight:normal;
+  font-style:normal;
+}
+a.btn-google{
+  color:white;
+}
+.btn{
+  padding:10px 16px;
+  margin:5px;
+  font-size:18px;
+  line-height:1.3333333;
+  border-radius:7px !important;
+  text-align:center;
+  white-space:nowrap;
+  vertical-align:middle;
+  -ms-touch-action:manipulation;
+  touch-action:manipulation;
+  cursor:pointer;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  border:0px solid transparent;
+  font-weight:500;
+  text-decoration:none;
+  display:inline-block
+}
+.btn:active:focus,.btn:focus{
+  outline:0
+}
+.btn:focus,.btn:hover{
+  color:black;
+  text-decoration:none;
+  outline:0
+}
+.btn:active{
+  outline:0;
+  -webkit-box-shadow:inset 0 3px 5px rgba(233, 226, 226, 0.125);
+  box-shadow:inset 0 3px 5px rgba(228, 227, 227, 0.125);
+}
+.btn-google{
+  color:black !important;
+  background-color:#f7f7f7;
+  border-color:#f7f7f7;
+  padding:15px 16px 5px 40px;
+  position:relative;
+  font-family:fontfutura;
+  border-radius:7px !important;
+  margin-right: 4px !important;
+}
+
+.btn-google:focus{
+  color:#fff;
+  background-color:#cacaca;
+  border-color:#c8c8c8;
+}
+button, .btn-google:active,button,.btn-google:hover{
+  color: var(--text-color) !important;
+  background-color:#cacaca;
+  border-color:#f7f7f7;
+  border-radius: 7px;
+}
+.btn-google:before{
+  content:"";
+  background-image:url(https://4.bp.blogspot.com/-52U3eP2JDM4/WSkIT1vbUxI/AAAAAAAArQA/iF1BeARv2To-2FGQU7V6UbNPivuv_lccACLcB/s30/nexus2cee_ic_launcher_play_store_new-1.png);
+  background-size:cover;
+  background-repeat:no-repeat;
+  width:30px;
+  height:30px;
+  position:absolute;
+  left:6px;
+  top:50%;
+  margin-top:-15px;
+}
+.btn-google:after{
+  content:"GET IT ON";
+  font-family: Arial, Helvetica, sans-serif;
+  position:absolute;
+  top:5px;
+  left:40px;
+  font-size:10px;
+  font-weight:400;
+}
+
+/* app store button style  */
+a.btn-app{
+  color:white;
+  border-radius:7px !important;
+}
+.btn{
+  /* padding:10px 16px; */
+  /* margin-left:50px !important; */
+  font-size:18px;
+  line-height:1.3333333;
+  border-radius: 7px !important;
+  text-align:center;
+  white-space:nowrap;
+  vertical-align:middle;
+  -ms-touch-action:manipulation;
+  touch-action:manipulation;
+  cursor:pointer;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  border:0px solid transparent;
+  font-weight:500;
+  text-decoration:none;
+  display:inline-block
+}
+.btn:active:focus,.btn:focus{
+  outline:0
+}
+.btn:focus,.btn:hover{
+  color:black;
+  text-decoration:none;
+  outline:0
+}
+.btn:active{
+  outline:0;
+  -webkit-box-shadow:inset 0 3px 5px rgba(233, 226, 226, 0.125);
+  box-shadow:inset 0 3px 5px rgba(228, 227, 227, 0.125);
+}
+.btn-app{
+  color:black !important;
+  background-color:#f7f7f7;
+  border-color:#f7f7f7;
+  padding:15px 16px 5px 40px;
+  position:relative;
+  font-family:fontfutura;
+  font-weight:600;
+  margin-left: 4px !important;
+  
+}
+
+.btn-app:focus{
+  color:#fff;
+  background-color:#cacaca;
+  border-color:#c8c8c8;
+}
+button, .btn-app:active,button,.btn-app:hover{
+  color: var(--text-color) !important;
+  background-color:#cacaca;
+  border-color:#f7f7f7;
+  border-radius: 7px;
+}
+.btn-app:before{
+  content:"";
+  background-image:url('./assets/images/apple-logo-transparent.png');
+  background-size:cover;
+  background-repeat:no-repeat;
+  width:38px;
+  height:38px;
+  position:absolute;
+  left:-1px;
+  top:40%;
+  margin-top:-15px;
+}
+.btn-app:after{
+  content:"Download on the";
+  font-family: Arial, Helvetica, sans-serif;
+  position:absolute;
+  top:5px;
+  left:40px;
+  font-size:10px;
+  font-weight:400;
+}
+
+
+.btn img{
+  width: 35px ;
+  height: 42px;
+  margin-right: 5px;
+}
+.btn1 img{
+  width: 40px ;
+  height: 50px;
+  margin-right: 5px;
+}
+
+.btn span span , .btn1 span span{
+  font-size: 10px;
+}
+
+.lightColor{
+  background-color: var(--light-color) !important;
+}
+
+
+
+.section-container {
+  display: flex;
+  flex-direction: column; 
+}
+.section-container a {
+  padding-block: 9px;
+}
+
+.container .py-5 .row a i{
+  padding-inline: 2px;
+  font-size: 20px;
+}
+.btn-style::before{
+  content: " ";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  background-color: #fff;
+  border: 1px solid white;
+  border-radius: 50px 50px;
+}
+.btn-style{
+  margin-top: 40px;
+  position: relative;
+  padding-top:14px;
+  background-color: #4F45E8;
+  border-radius: 50px 50px;
+  border: 1px solid #4F45E8;
+}
+
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+
+.font-lg{
+  font-size: 51px;
+}
+
+.font-sm {
+  font-size: 11px;
+}
+.text-main {
+  color: var(--main-color);
+}
+.bg-main-light {
+  background-color: var(--light-color) !important;
+}
+.btn-main {
+  background-color:var(--light-color);
+  padding: 7px 10px;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  /* transition: background-color 0.5s; */
+}
+
+.points ul {
+  list-style-type: none; /* Remove default list style */
+  padding-inline: 10px;
+}
+
+.points li {
+  position: relative; /* Ensure position context for marker */
+  padding-left: 30px; /* Ensure space for the marker */
+  color: var(--header-color);
+  font-family: 'Headers';
+
+
+}
+
+.points li::before {
+  content: "•"; /* Custom marker content */
+  font-size: 25px;
+  position: absolute; /* Position the marker absolutely */
+  right: -18px; /* Adjust horizontal position */
+  top: 55%; /* Adjust vertical position */
+  transform: translateY(-50%); /* Center vertically */ /* Adjust spacing between marker and text */
+  color: var(--secondary-color); /* Change marker color */
+}
+
+ul p{
+  font-size: 15px;
+}
+.bg-color{
+  background-color: #4F45E8;
+}
+.bg-footerColor{
+  background-color: #06054B;
+}
+
+.card-img-top{
+  width: 30%;
+}
+
+.img6{
+  display: none;
+}
+
+
+
+
+
+
+@media (max-width: 767.98px) { 
+
+  .section2{
+    padding: 10px !important;
+  }
+
+  .img5{
+    display: none;
+  }
+
+  .img6{
+    display: block;
+    width: 100%;
+    padding-bottom: 8px !important;
+  }
+  
+  .textt h1 , .textt p{
+    font-size: 13px;
+    /* padding: 5px; */
+  }
+
+  section{
+    padding: 0 !important;
+    margin: 0 !important;
+    padding-block: 0 !important;
+  }
+
+  .navbar-brand {
+    display: inline-block;
+    text-align: center;
+    width: 100%; /* Ensure full width of the navbar */
+  }
+
+  .navbar-brand img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .navbar-toggler , .btn-style , .applink{
+    display: none;
+  }
+
+  .img2 img{
+    width: 110% !important;
+  }
+
+  body {
+    padding: 0;
+    margin: 0 ; 
+    height: 100vh;
+    text-align: center;
+  }
+
+  h4 , p{
+    text-align: center !important;
+    /* padding: 0px;
+    margin: 0px; */
+  }
+
+  .body-content{
+    font-size: 9.5px;
+  }
+  
+  .space{
+    margin-block: 10px;
+  }
+
+  .card-img-top{
+    width: 45%;
+  }
+
+  h1{
+    font-size: 37px !important;
+  }
+
+  .container {
+    text-align: center;
+    width: 100%; 
+  }
+
+  ul , ul p{
+    text-align: right !important;
+    padding: 0;
+  }
+
+  .img3 img{
+    margin-top: 7px;
+    width: 100% !important;
+  }
+
+  .btnn{
+    padding-top: 20px !important;
+  }
+
+  .logo img{
+    width: 35% !important;
+    margin-bottom: 20px;
+  }
+  .footer{
+    display: flex !important;
+    justify-content: space-between !important ;
+  }
+
+  .bnt{
+    /* display: flex !important; */
+    justify-content: center !important;
+    margin: auto !important;
+    margin-inline-start: 0 !important;
+  }
+
+  .row1 {
+   display: flex;
+   flex-direction: column-reverse;
+  }
+
+}
+
+
+
+
+
+
+
+
+
